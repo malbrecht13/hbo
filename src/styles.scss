@@ -1,7 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
-$primary-dark-color: #993300;
-$primary-font-family: "Arial";
-$primary-text-color: white;
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+// import our custom theme
+@import './theme.scss';
+
+.my-theme {
+  @include angular-material-theme($hbo-theme);
+}
+
 
 * {
   margin: 0;
@@ -9,12 +17,16 @@ $primary-text-color: white;
   box-sizing: border-box;
 }
 
+html, body { height: 100%; }
+
 body {
-  background-color: $primary-dark-color;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5%;
-  font-family: $primary-font-family;
-  color: $primary-text-color;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.page_title {
+  text-align: center;
 }

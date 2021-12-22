@@ -4,17 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
+import { SharedModule } from './shared/shared.module';
+
+import { EligibilityModule } from './eligibility/eligibility.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NoopAnimationsModule,
+    SharedModule,
+    EligibilityModule
   ],
   providers: [],
   bootstrap: [AppComponent]

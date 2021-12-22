@@ -1,0 +1,7 @@
+<div class="home_page_menu_list">
+  <mat-nav-list *ngFor="let listName of listNames">
+    <mat-list-item class="my-theme">
+      <app-listtile [title]="listName.title" routerLink="/{{listName.route}}"></app-listtile>
+    </mat-list-item>
+  </mat-nav-list>
+</div>

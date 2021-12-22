@@ -1,0 +1,10 @@
+<div class="eligibility_menu_list">
+  <mat-nav-list *ngFor="let indication of hbo_indications">
+    <mat-list-item class="my-theme" (click)="toggleCollapsed(indication)">
+      <app-listtile [title]="indication.title"></app-listtile>
+    </mat-list-item>
+    <section class="eligibility_details" *ngIf="!indication.isCollapsed">
+      <p>Not collapsed</p>
+    </section>
+  </mat-nav-list>
+</div>
