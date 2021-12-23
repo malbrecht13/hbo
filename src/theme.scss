@@ -1,9 +1,17 @@
-$hbo-theme-primary: mat-palette($mat-deep-purple);
-$hbo-theme-accent: mat-palette($mat-amber);
-$hbo-theme-warn: mat-palette($mat-red);
+@use '@angular/material' as mat;
+@use './app/components/footer/footer-theme.component.scss' as footer;
 
-$hbo-theme: mat-light-theme(
-  $hbo-theme-primary,
-  $hbo-theme-accent,
-  $hbo-theme-warn
-);
+$hbo-primary: mat.define-palette(mat.$deep-purple-palette);
+$hbo-accent: mat.define-palette(mat.$amber-palette);
+$hbo-warn: mat.define-palette(mat.$red-palette);
+
+$hbo-theme: mat.define-light-theme((
+  color: (
+    primary: $hbo-primary,
+    accent: $hbo-accent,
+    warn: $hbo-warn
+  )
+));
+
+@include mat.all-component-themes($hbo-theme);
+@include footer.theme($hbo-theme);
