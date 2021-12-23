@@ -1,0 +1,14 @@
+<section class="elig_detail_section">
+  <div class="elig_criteria_container" *ngIf="elig_criteria">
+    <h3>CMS Criteria:</h3>
+    <ul class="elig_criteria_items" *ngFor="let item of elig_criteria">
+      <li>{{item}}</li>
+    </ul>
+  </div>
+  <div class="std_wound_care_container" *ngIf="std_wound_care">
+    <h3>CMS definition of standard wound therapy for diabetic wounds:</h3>
+    <ul class="wound_care_items" *ngFor="let item of std_wound_care">
+      <li>{{item}}</li>
+    </ul>
+  </div>
+</section>

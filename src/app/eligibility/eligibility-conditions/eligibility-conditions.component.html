@@ -4,7 +4,7 @@
       <app-listtile [title]="indication.title"></app-listtile>
     </mat-list-item>
     <section class="eligibility_details" *ngIf="!indication.isCollapsed">
-      <p>Not collapsed</p>
+      <app-eligibility-detail [elig_criteria]="indication.elig_criteria" [std_wound_care]="indication.standard_wound_care"></app-eligibility-detail>
     </section>
   </mat-nav-list>
 </div>

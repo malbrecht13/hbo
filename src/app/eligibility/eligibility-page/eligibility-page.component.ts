@@ -6,7 +6,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./eligibility-page.component.scss']
 })
 export class EligibilityPageComponent implements OnInit {
-  pageTitle: string = 'HBO Eligibility';
+  pageTitle: string = 'HBO Eligibility Criteria';
 
   constructor() { }
 
