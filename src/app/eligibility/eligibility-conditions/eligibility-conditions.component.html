@@ -1,10 +1,14 @@
 <div class="eligibility_menu_list">
   <mat-nav-list *ngFor="let indication of hbo_indications">
     <mat-list-item class="my-theme" (click)="toggleCollapsed(indication)">
-      <app-listtile [title]="indication.title"></app-listtile>
+      <app-listtile [title]="indication.title" [collapsed]="indication.isCollapsed"></app-listtile>
     </mat-list-item>
     <section class="eligibility_details" *ngIf="!indication.isCollapsed">
+      <div class="wagner" align="center" *ngIf="indication.title === 'Diabetic wounds of lower extremities'">
+        <button mat-raised-button (click)="openWagnerDialog()" class="determine_wagner_btn">Determine Wagner Grade</button>
+      </div>
       <app-eligibility-detail [elig_criteria]="indication.elig_criteria" [std_wound_care]="indication.standard_wound_care"></app-eligibility-detail>
     </section>
+    
   </mat-nav-list>
 </div>

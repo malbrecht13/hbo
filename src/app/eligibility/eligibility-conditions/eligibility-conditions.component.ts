@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { WagnerGradesComponent } from '../wagner-grades/wagner-grades.component';
 
 @Component({
   selector: 'app-eligibility-conditions',
@@ -90,7 +92,7 @@ export class EligibilityConditionsComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.hbo_indications.forEach(item => {
@@ -102,6 +104,9 @@ export class EligibilityConditionsComponent implements OnInit {
     indication.isCollapsed = !indication.isCollapsed;
   }
 
+  openWagnerDialog(): void {
+    this.dialog.open(WagnerGradesComponent);
+  }
   
 
 }

@@ -19,6 +19,7 @@ import { NavmenuComponent } from './components/navmenu/navmenu.component';
     FooterComponent,
     HomePageComponent,
     NavmenuComponent,
+
   ],
   imports: [
     BrowserModule,

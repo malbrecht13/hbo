@@ -3,13 +3,16 @@ import { EligibilityConditionsComponent } from './eligibility-conditions/eligibi
 import { EligibilityPageComponent } from './eligibility-page/eligibility-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { EligibilityDetailComponent } from './eligibility-detail/eligibility-detail.component';
+import { WagnerGradesComponent } from './wagner-grades/wagner-grades.component';
 
 @NgModule({
   declarations: [
     EligibilityConditionsComponent,
     EligibilityPageComponent,
     EligibilityDetailComponent,
+    WagnerGradesComponent,
   ],
+  entryComponents: [WagnerGradesComponent],
   imports: [
     SharedModule
   ],

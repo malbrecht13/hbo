@@ -1,4 +1,15 @@
 .mat-card {
   width: 100%;
   min-width: 90vw;
+  max-width: 90vw;
+}
+
+.mat-card-title {
+  font-size: 1rem;
+}
+
+.card_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
