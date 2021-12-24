@@ -10,6 +10,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormsModule} from '@angular/forms';
 
 @NgModule({
@@ -27,6 +28,7 @@ import {FormsModule} from '@angular/forms';
     MatButtonModule,
     MatDialogModule,
     MatTableModule,
+    MatCheckboxModule,
     FormsModule
   ],
   exports: [
@@ -39,6 +41,7 @@ import {FormsModule} from '@angular/forms';
     MatButtonModule,
     MatDialogModule,
     MatTableModule,
+    MatCheckboxModule,
     AppRoutingModule,
     CommonModule,
     FormsModule
