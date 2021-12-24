@@ -30,7 +30,7 @@ export class ContraindicationsComponent implements OnInit {
     other: [
       'History of seizures',
       'History of claustrophobia',
-
+      'Any current ear or sinus symptoms'
     ]
   };
 
