@@ -11,6 +11,8 @@ import { SharedModule } from './shared/shared.module';
 
 import { EligibilityModule } from './eligibility/eligibility.module';
 import { NavmenuComponent } from './components/navmenu/navmenu.component';
+import { ContraindicationsComponent } from './pages/contraindications/contraindications.component';
+import { ChecklistComponent } from './pages/checklist/checklist.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { NavmenuComponent } from './components/navmenu/navmenu.component';
     FooterComponent,
     HomePageComponent,
     NavmenuComponent,
+    ContraindicationsComponent,
+    ChecklistComponent,
 
   ],
   imports: [
