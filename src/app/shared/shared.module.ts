@@ -6,6 +6,9 @@ import { ListtileComponent } from '../components/listtile/listtile.component';
 import {MatCardModule} from '@angular/material/card'; 
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatListModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSidenavModule,
+    MatButtonModule,
+    FormsModule
   ],
   exports: [
     PageNotFoundComponent,
@@ -25,8 +31,11 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatListModule,
     MatIconModule,
+    MatSidenavModule,
+    MatButtonModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class SharedModule { }

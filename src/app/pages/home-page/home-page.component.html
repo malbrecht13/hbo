@@ -1,7 +1,13 @@
-<div class="home_page_menu_list">
-  <mat-nav-list *ngFor="let listName of listNames">
-    <mat-list-item class="my-theme">
-      <app-listtile [title]="listName.title" routerLink="/{{listName.route}}"></app-listtile>
-    </mat-list-item>
-  </mat-nav-list>
+<div class="home_main">
+  <img class="hbot_img" src="../../../assets/HBOT.jpg" alt="Hyperbaric oxygen image">
+  <p>This is the Hyperbaric Oxygen Therapy (HBOT) app.  This app is intended for use by healthcare professionals
+    who treat patients using hyperbaric oxygen, particularly in the wound care setting. Use the navigation at the 
+    top of the screen to help you with things like:
+  </p>
+  <ul class="app_functions_list">
+    <li>Determining HBO eligibility based on condition</li>
+    <li>Determine number of treatments for the patient, at what atmospheric pressure</li>
+    <li>Run through a pre-HBO checklist</li>
+    <li>Review Contraindications of HBO</li>
+  </ul>
 </div>

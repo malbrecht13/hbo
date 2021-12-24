@@ -7,24 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  listNames: any[] = [
-    {
-      title: 'Eligibility',
-      route: 'eligibility'
-    },
-    {
-      title: 'Number of Treatments',
-      route: 'number-treatments'
-    },
-    {
-      title: 'Pre-HBO Checklist',
-      route: 'hbo-checklist'
-    },
-    {
-      title: 'Contraindications',
-      route: 'contraindications'
-    }
-  ]
+  
 
   constructor() { }
 

@@ -1,0 +1,7 @@
+<div class="home_page_menu_list">
+  <h2>Navigation Menu</h2>
+  <button mat-raised-button>Close</button>
+  <ul *ngFor="let listName of listNames">
+      <li class="nav_item" [routerLink]="listName.route">{{listName.title}}</li>
+  </ul>
+</div>

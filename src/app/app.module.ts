@@ -10,6 +10,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 
 import { EligibilityModule } from './eligibility/eligibility.module';
+import { NavmenuComponent } from './components/navmenu/navmenu.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { EligibilityModule } from './eligibility/eligibility.module';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
+    NavmenuComponent,
   ],
   imports: [
     BrowserModule,

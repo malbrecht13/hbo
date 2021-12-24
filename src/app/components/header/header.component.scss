@@ -1,4 +1,15 @@
 .app_header {
-  margin: 50px;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 7%;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  z-index: 2;
+}
+
+mat-icon {
+  font-size: 2rem;
 }

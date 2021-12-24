@@ -1,5 +1,6 @@
 @use '@angular/material' as mat;
 @use './app/components/footer/footer-theme.component.scss' as footer;
+@use './app/components/header/header-theme.component.scss' as header;
 
 $hbo-primary: mat.define-palette(mat.$deep-purple-palette);
 $hbo-accent: mat.define-palette(mat.$amber-palette);
@@ -13,5 +14,5 @@ $hbo-theme: mat.define-light-theme((
   )
 ));
 
-@include mat.all-component-themes($hbo-theme);
 @include footer.theme($hbo-theme);
+@include header.theme($hbo-theme);

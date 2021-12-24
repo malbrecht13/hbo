@@ -1,3 +1,11 @@
-<app-header ></app-header>
-<router-outlet></router-outlet>
+
+<mat-sidenav-container>
+  <mat-sidenav position="end" mode="over" [(opened)]="opened" (closed)="closedSideNav()">
+    <app-navmenu (click)="closedSideNav()"></app-navmenu>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (toggle)="setIsSideNavOpen($event)" [opened]="opened"></app-header>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 <app-footer></app-footer>
