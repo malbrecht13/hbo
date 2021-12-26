@@ -18,7 +18,7 @@ export class NavmenuComponent implements OnInit {
     },
     {
       title: 'Number of Treatments',
-      route: 'number-treatments'
+      route: 'treatments'
     },
     {
       title: 'Pre-HBO Checklist',

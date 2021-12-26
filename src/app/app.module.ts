@@ -10,6 +10,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 
 import { EligibilityModule } from './eligibility/eligibility.module';
+import { TherapyModule } from './therapy/therapy.module';
 import { NavmenuComponent } from './components/navmenu/navmenu.component';
 import { ContraindicationsComponent } from './pages/contraindications/contraindications.component';
 import { ChecklistComponent } from './pages/checklist/checklist.component';
@@ -29,7 +30,8 @@ import { ChecklistComponent } from './pages/checklist/checklist.component';
     BrowserModule,
     NoopAnimationsModule,
     SharedModule,
-    EligibilityModule
+    EligibilityModule,
+    TherapyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

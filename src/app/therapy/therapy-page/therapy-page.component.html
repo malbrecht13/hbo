@@ -1,0 +1,33 @@
+<div class="condition_list">
+  <h2 class="page_title">HBO Treatments</h2>
+  <div class="collapse_btn_div">
+    <button mat-raised-button class="collapse_btn" (click)="expandAll()">Expand all</button>
+    <button mat-raised-button class="collapse_btn" (click)="collapseAll()">Collapse all</button>
+  </div>
+  <mat-nav-list *ngFor="let condition of conditions">
+    <mat-list-item class="my-theme" (click)="toggleCollapsed(condition)">
+      <app-listtile [title]="condition.title" [collapsed]="condition.isCollapsed"></app-listtile>
+    </mat-list-item>
+    <section class="condition_details" *ngIf="!condition.isCollapsed">
+      <div class="ata_container">
+        <h3 class="condition_subheading">Treatment Options</h3>
+        <ul class="condition_ul_list" *ngFor="let treatment of condition.treatment_ata">
+          <li class="condition_list_item">{{treatment}}</li>
+        </ul>
+      </div>
+      <div class="ata_container">
+        <h3 class="condition_subheading">Number of Treatments</h3>
+        <ul class="condition_ul_list" *ngFor="let item of condition.treatment_number">
+          <li class="condition_list_item">{{item}}</li>
+        </ul>
+      </div>
+      <div class="ata_container">
+        <h3 class="condition_subheading">Utilization Review</h3>
+        <ul class="condition_ul_list" *ngFor="let item of condition.utilization_review">
+          <li class="condition_list_item">{{item}}</li>
+        </ul>
+      </div>
+    </section>
+    
+  </mat-nav-list>
+</div>

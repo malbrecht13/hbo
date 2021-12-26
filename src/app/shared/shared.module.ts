@@ -13,6 +13,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormsModule} from '@angular/forms';
 
+import {ConditionDataService} from '../services/condition-data.service';
+
 @NgModule({
   declarations: [
     PageNotFoundComponent,
@@ -45,6 +47,7 @@ import {FormsModule} from '@angular/forms';
     AppRoutingModule,
     CommonModule,
     FormsModule
-  ]
+  ],
+  providers: [ConditionDataService]
 })
 export class SharedModule { }

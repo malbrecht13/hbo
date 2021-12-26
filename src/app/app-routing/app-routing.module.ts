@@ -5,12 +5,14 @@ import { PageNotFoundComponent } from '../pages/page-not-found/page-not-found.co
 import { EligibilityPageComponent } from '../eligibility/eligibility-page/eligibility-page.component';
 import { ContraindicationsComponent } from '../pages/contraindications/contraindications.component';
 import { ChecklistComponent } from '../pages/checklist/checklist.component';
+import { TherapyPageComponent } from '../therapy/therapy-page/therapy-page.component';
 
 const routes: Routes = [
   {path: "", component: HomePageComponent},
   {path: "eligibility", component: EligibilityPageComponent},
   {path: "contraindications", component: ContraindicationsComponent},
   {path: "hbo-checklist", component: ChecklistComponent},
+  {path: "treatments", component: TherapyPageComponent},
   {path: "**", component: PageNotFoundComponent},
 
 ];
