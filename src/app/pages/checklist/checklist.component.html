@@ -1,18 +1,17 @@
 <section class="checklist_page">
 
   <h2 class="checklist_heading">Pre-HBO Checklist</h2>
-  <h3 class="checklist_subheading">Determine the following prior to HBO</h3>
-
-  <ul class="list_subheading" *ngFor="let item of checklistItems">
-    <mat-checkbox *ngIf="item.includes('contraindications')">
-      <a routerLink="../contraindications">{{item}}</a>
+  <h3 class="checklist_subheading">Perform the following prior to HBO:</h3>
+  <div class="list_subheading" *ngFor="let item of checklistItems">
+    <mat-checkbox *ngIf="item.text.includes('contraindications')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
+      <a routerLink="../contraindications" >{{item.text}}</a>
     </mat-checkbox>
-    <mat-checkbox *ngIf="item.includes('eligibility')">
-      <a routerLink="../eligibility">{{item}}</a>
+    <mat-checkbox *ngIf="item.text.includes('eligibility')">
+      <a routerLink="../eligibility">{{item.text}}</a>
     </mat-checkbox>
-    <mat-checkbox *ngIf="!item.includes('contraindications') && !item.includes('eligibility')">
-      {{item}}
+    <mat-checkbox *ngIf="!item.text.includes('contraindications') && !item.text.includes('eligibility')">
+      {{item.text}}
     </mat-checkbox>
-  </ul>
+  </div>
 
 </section>

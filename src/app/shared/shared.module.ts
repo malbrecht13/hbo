@@ -14,7 +14,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormsModule} from '@angular/forms';
 
 import {ConditionDataService} from '../services/condition-data.service';
-
+import { CheckboxService } from '../services/checkbox.service';
 @NgModule({
   declarations: [
     PageNotFoundComponent,
@@ -48,6 +48,6 @@ import {ConditionDataService} from '../services/condition-data.service';
     CommonModule,
     FormsModule
   ],
-  providers: [ConditionDataService]
+  providers: [ConditionDataService, CheckboxService]
 })
 export class SharedModule { }

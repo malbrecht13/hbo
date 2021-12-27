@@ -64,7 +64,10 @@ export class ConditionDataService {
     {
       title: "Osteoradionecrosis",
       elig_criteria: [
-        "As an adjunct to conventional treatment"
+        "CMS:  As an adjunct to conventional treatment.  Documentation needs to link radiation to tissue injury (i.e., \"late effects\")",
+        "Healogics: Bone injury or necrosis and prior radiation exposure as mechanism of tissue injury",
+        "Healogics: Document specific radiation dose and field of therapy, dates of administration, and indication for radiation therapy",
+        "Healogics: Document objective findings of tissue injury and/or necrosis."
       ],
       treatment_number: [
         'Treatment: 30 pre and 10 post-op (40 total)',
@@ -78,6 +81,12 @@ export class ConditionDataService {
     },
     {
       title: "Acute peripheral arterial insufficiency",
+      elig_criteria: [
+        "Healogics: Critical limb ischemia or chronic critical limb ischemia persisting following revascularization when possible",
+        "Healogics: Critical limb ischemia is defined as the presence of a clinical indicator, in this case ischemic tissue necrosis, ulcer, or cutaneous or deep tissue gangrene and one of objective indicators including: ABI < 0.5, TBI < 0.2, SPP < 30 mmHg, or PtcO2 < 30 mmHg",
+        "For CMS:\n\t1. Evidence of skin or deep tissue necrosis secondary to ischemia\n\t2. Evidence of arterial embolization or thrombosis at the large to mid-sized arterial level\n\t3. Documentation of the ischemic event and that it occurred within 90 days of initial evaluation.",
+        "For some MACs, covered only when HBO is provided as an inpatient service"
+      ],
       treatment_number: ['20-30 treatments',
         'Consider BID if critical ischemia',
         upTo60
@@ -95,7 +104,9 @@ export class ConditionDataService {
     {
       title: "Crush injuries/Compartment syndrome",
       elig_criteria: [
-        "Adjunctive therapy in combination with accepted standard therapeutic measures when loss of function, limb, or life is threatened"
+        "Emergnency indication",
+        "Healogics: Wound or extremity associated with crushing or compressive trauma, a primary acute arterial occlusion of flow compromise associated with trauma, or other extensive soft tissue (expecially multi-tissue) trauma at any location with resulting ischemic or hypoxic compromise (typically Gustillo III A with age > 40, and Gustillo IIIB and C).",
+        "For CMS:  Adjunctive therapy in combination with accepted standard therapeutic measures when loss of function, limb, or life is threatened.  Limited to extremity traumatic ischemias, extremity crushing injury, and reattachment of severed limbs or digits",
       ],
       treatment_ata: [...crushRegimen],
       treatment_number: [
@@ -109,6 +120,12 @@ export class ConditionDataService {
     },
     {
       title: "Preparation and preservation of compromised skin grafts",
+      elig_criteria: [
+        "Acute indication: initiate HBO within 3 weeks",
+        "Healogics: Ischemic or infectious compromise to graft or flap (subset of graft) or surgical wound violating two planes creating a flap with some portion of graft or flap potentially salvageable",
+        "For CMS: Preparation and preservation of compromised skin grafts (not for primary management of wounds)",
+        "CMS requires: 1. Cannot use for initial site preparation for application of graft or flap, presenting within 3 weeks of placement.  2. Describe the nature of the graft or flap, the date created, and objective findings supporting graft or flap failure. 3. Some portion of graft or flap must still be viable and potentially salvageable and should be documented. 4. Cannot be used to support healing of bioengineered skin substitue as the \"graft.\""
+      ],
       treatment_ata: [
         ...std_treatments,
         airBreaks20,
@@ -126,7 +143,8 @@ export class ConditionDataService {
     {
       title: "Soft tissue radionecrosis",
       elig_criteria: [
-        "As an adjunct to conventional treatment"
+        "Healogics: Soft tissue injury or necrosis of skin, bladder (cystitis), rectum (proctitis), small bowel (enteritis), and prior radiation exposure as mechanism of tissue injury.  Document specific radiation dose and field of therapy, dates of administration, and indication for radiation therapy.  Documents objective findings of tissue injury and/or necrosis.",
+        "CMS: As an adjunct to conventional treatment.  Documentation needs to link radiation to tissue injury (i.e., \"late effects\")."
       ],
       treatment_ata: [
         ...std_treatments,
@@ -142,7 +160,13 @@ export class ConditionDataService {
       ]
     },
     {
-      title: "Chronic and/or refractory osteomyelitis",
+      title: "Chronic and/or refractory osteomyelitis (non DFU)",
+      elig_criteria: [
+        "Healogics: Persistent wound or ulcer due to underlying osteomyelitis unresponsive to conventional care meeting Cierny-Mader III (Permeative/Stable infection penetrating cortex) or IV (Permeative/Unstable infection through bone in segmental fashion producing instability) B (locally or systemically compromised host).  Can be chronic and refractory to conventional care.",
+        "For CMS: Chronic refractory osteomyelitis unresponsive to conventional medical and surgical management.",
+        "CMS requires: 1. Must be chronic osteomyelitis that has failed appropriate conventional management alone (antibiotic therapy, debridement) which must continue during HBO.  2. Must document evidence confirming osteomyelitis: culture, histopathology, imaging studies.  3. Must continue appropriate other care (antibiotic therapy, mechanical stabilization, surgical management)."
+
+      ],
       treatment_ata: [
         ...std_treatments,
         airBreaks20
@@ -157,6 +181,11 @@ export class ConditionDataService {
     },
     {
       title: "Necrotizing soft tissue infections",
+      elig_criteria: [
+         "Healogics: Wound associated with rapidly progressive necrotizing soft tissue infection including progressive synergistic bacterial gangrene (severe cases), necrotizing fasciitis, and non-clostridial myonecrosis",
+         "For CMS: Progressive necrotizing fasciitis (necrotizing fasciitis).",
+         "For some MACs, covered only when HBO provided as an inpatient service.",
+      ],
       treatment_ata: [...crushRegimen],
       treatment_number: [
         '8-10 treatments',
@@ -168,6 +197,12 @@ export class ConditionDataService {
     },
     {
       title: "Gas gangrene/Clostridial Myonecrosis",
+      elig_criteria: [
+        "Emergency indication",
+        "CMS: Gas gangrene could include clostridial myonecrosis or non-clostridial myonecrosis (determined by muscle involvement and organism, not just gas in tissue).",
+        "For some MACs, covered only when HBO provided as an inpatient service.",
+        "Healogics: Wound associated with rapidly progressive soft tissue infection involving muscle and due to infection with clostridium species."
+      ],
       treatment_ata: [...crushRegimen],
       treatment_number: [
         '8-10 treatments',
@@ -180,6 +215,9 @@ export class ConditionDataService {
     }, 
     {
       title: "Acute carbon monoxide intoxication",
+      elig_criteria: [
+        "Acute carbon monoxide intoxciation"
+      ],
       treatment_ata: [...carbonMonixide],
       treatment_number: [
         '3 treatments if Weaver protocol',
@@ -191,12 +229,18 @@ export class ConditionDataService {
     },
     {
       title: "Arterial gas embolism",
+      elig_criteria: [
+        "Arterial gas embolism"
+      ],
       treatment_ata: [...gasEmbolismRegimen],
       treatment_number: [...gasEmbolismTreatmentRange],
       utilization_review: ['5 treatments']
     },
     {
       title: "Decompression illness",
+      elig_criteria: [
+         "Decompression illness"
+      ],
       treatment_ata: [...gasEmbolismRegimen],
       treatment_number: [...gasEmbolismTreatmentRange],
       utilization_review: ['5 treatments']

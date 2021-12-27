@@ -13,16 +13,16 @@ export class NavmenuComponent implements OnInit {
       route: ''
     },
     {
+      title: 'Pre-HBO Checklist',
+      route: 'hbo-checklist'
+    },
+    {
       title: 'Eligibility',
       route: 'eligibility'
     },
     {
-      title: 'Number of Treatments',
+      title: 'HBO Treatments',
       route: 'treatments'
-    },
-    {
-      title: 'Pre-HBO Checklist',
-      route: 'hbo-checklist'
     },
     {
       title: 'Contraindications',

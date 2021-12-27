@@ -14,4 +14,6 @@ export class EligibilityDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ 
+
 }

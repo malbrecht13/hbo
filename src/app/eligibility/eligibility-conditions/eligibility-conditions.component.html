@@ -1,4 +1,8 @@
 <div class="eligibility_menu_list">
+  <div class="collapse_btn_div">
+    <button mat-raised-button class="collapse_btn" (click)="expandAll()">Expand all</button>
+    <button mat-raised-button class="collapse_btn" (click)="collapseAll()">Collapse all</button>
+  </div>
   <mat-nav-list *ngFor="let indication of hbo_indications">
     <mat-list-item class="my-theme" (click)="toggleCollapsed(indication)">
       <app-listtile [title]="indication.title" [collapsed]="indication.isCollapsed"></app-listtile>
