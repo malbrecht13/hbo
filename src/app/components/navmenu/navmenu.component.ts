@@ -27,6 +27,10 @@ export class NavmenuComponent implements OnInit {
     {
       title: 'Contraindications',
       route: 'contraindications'
+    },
+    {
+      title: 'Risk Assessment',
+      route: 'risk-assessment'
     }
   ]
 

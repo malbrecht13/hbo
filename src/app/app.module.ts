@@ -14,6 +14,7 @@ import { TherapyModule } from './therapy/therapy.module';
 import { NavmenuComponent } from './components/navmenu/navmenu.component';
 import { ContraindicationsComponent } from './pages/contraindications/contraindications.component';
 import { ChecklistComponent } from './pages/checklist/checklist.component';
+import { RiskAssessmentModule } from './risk-assessment/risk-assessment.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ChecklistComponent } from './pages/checklist/checklist.component';
     NoopAnimationsModule,
     SharedModule,
     EligibilityModule,
-    TherapyModule
+    TherapyModule,
+    RiskAssessmentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

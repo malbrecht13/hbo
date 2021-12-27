@@ -1,0 +1,13 @@
+<section class="risk_assessment_page">
+  <h2 class="page_title">
+    HBO Risk Assessment
+  </h2>
+  <h3 class="select_message">Select all of the following that apply to your patient:</h3>
+  <div class="risk_condition_container" *ngFor="let condition of conditions" >
+     <mat-checkbox [checked]="condition.isChecked" (change)="toggleIsChecked(condition.key)">{{condition.condition}}</mat-checkbox>
+  </div>
+  <div class="next_btn_div">
+    <button mat-raised-button class="next_btn" (click)="passCheckedData()">Next</button>
+  </div>
+
+</section>

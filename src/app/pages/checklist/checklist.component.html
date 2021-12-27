@@ -1,4 +1,4 @@
-<section class="checklist_page">
+<section class="page">
 
   <h2 class="checklist_heading">Pre-HBO Checklist</h2>
   <h3 class="checklist_subheading">Perform the following prior to HBO:</h3>
@@ -9,8 +9,8 @@
     <mat-checkbox *ngIf="item.text.includes('eligibility')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
       <a routerLink="../eligibility">{{item.text}}</a>
     </mat-checkbox>
-    <mat-checkbox *ngIf="!item.text.includes('contraindications') && !item.text.includes('eligibility')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
-      {{item.text}}
+    <mat-checkbox *ngIf="item.text.includes('Risk')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
+      <a routerLink="../risk-assessment">{{item.text}}</a>
     </mat-checkbox>
   </div>
 

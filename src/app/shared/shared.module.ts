@@ -15,6 +15,7 @@ import {FormsModule} from '@angular/forms';
 
 import {ConditionDataService} from '../services/condition-data.service';
 import { CheckboxService } from '../services/checkbox.service';
+import { QuestionService } from '../services/question.service';
 @NgModule({
   declarations: [
     PageNotFoundComponent,
@@ -48,6 +49,6 @@ import { CheckboxService } from '../services/checkbox.service';
     CommonModule,
     FormsModule
   ],
-  providers: [ConditionDataService, CheckboxService]
+  providers: [ConditionDataService, CheckboxService, QuestionService]
 })
 export class SharedModule { }

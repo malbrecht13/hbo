@@ -1,0 +1,28 @@
+.risk_assessment_page {
+  margin: 10px 10%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+:host::ng-deep.mat-checkbox-layout{
+  white-space: normal !important;
+}
+  
+:host::ng-deep.mat-checkbox-inner-container{
+    margin-top: 4px;
+}
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background {
+  background-color: #673ab6 !important;
+}
+
+.next_btn_div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next_btn {
+  background-color: #673ab6 !important;
+  color: #fff;
+}

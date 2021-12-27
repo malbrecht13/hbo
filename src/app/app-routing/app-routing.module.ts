@@ -6,6 +6,8 @@ import { EligibilityPageComponent } from '../eligibility/eligibility-page/eligib
 import { ContraindicationsComponent } from '../pages/contraindications/contraindications.component';
 import { ChecklistComponent } from '../pages/checklist/checklist.component';
 import { TherapyPageComponent } from '../therapy/therapy-page/therapy-page.component';
+import { RiskAssessmentHomeComponent } from '../risk-assessment/risk-assessment-home/risk-assessment-home.component';
+import { RiskRecsComponent } from '../risk-assessment/risk-recs/risk-recs.component';
 
 const routes: Routes = [
   {path: "", component: HomePageComponent},
@@ -13,6 +15,8 @@ const routes: Routes = [
   {path: "contraindications", component: ContraindicationsComponent},
   {path: "hbo-checklist", component: ChecklistComponent},
   {path: "treatments", component: TherapyPageComponent},
+  {path: "risk-assessment", component: RiskAssessmentHomeComponent},
+  {path: "risk-recommendations", component: RiskRecsComponent},
   {path: "**", component: PageNotFoundComponent},
 
 ];

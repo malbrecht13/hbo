@@ -21,7 +21,6 @@ export class TherapyPageComponent implements OnInit {
         isCollapsed: true
       }
     });
-    console.log(this.conditions);
   }
 
   toggleCollapsed(condition: any): void {
