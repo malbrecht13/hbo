@@ -3,15 +3,21 @@
   <h2 class="checklist_heading">Pre-HBO Checklist</h2>
   <h3 class="checklist_subheading">Perform the following prior to HBO:</h3>
   <div class="list_subheading" *ngFor="let item of checklistItems">
-    <mat-checkbox *ngIf="item.text.includes('contraindications')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
+    <mat-checkbox *ngIf="item.text.includes('contraindications')" [checked]="item.isChecked" (change)="toggleIsChecked(item.key)">
       <a routerLink="../contraindications" >{{item.text}}</a>
     </mat-checkbox>
-    <mat-checkbox *ngIf="item.text.includes('eligibility')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
+    <mat-checkbox *ngIf="item.text.includes('eligibility')" [checked]="item.isChecked" (change)="toggleIsChecked(item.key)">
       <a routerLink="../eligibility">{{item.text}}</a>
     </mat-checkbox>
-    <mat-checkbox *ngIf="item.text.includes('Risk')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
+    <mat-checkbox *ngIf="item.text.includes('Risk')" [checked]="item.isChecked" (change)="toggleIsChecked(item.key)">
       <a routerLink="../risk-assessment">{{item.text}}</a>
     </mat-checkbox>
+    <mat-checkbox *ngIf="item.text.includes('treatment')" [checked]="item.isChecked" (change)="toggleIsChecked(item.key)">
+      <a routerLink="../treatments">{{item.text}}</a>
+    </mat-checkbox>
+  </div>
+  <div class="clear_checklist_btn_div">
+    <button mat-raised-button class="clear_checklist_btn" (click)="clearChecklist()">Clear Checklist</button>
   </div>
 
 </section>
