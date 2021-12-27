@@ -6,10 +6,10 @@
     <mat-checkbox *ngIf="item.text.includes('contraindications')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
       <a routerLink="../contraindications" >{{item.text}}</a>
     </mat-checkbox>
-    <mat-checkbox *ngIf="item.text.includes('eligibility')">
+    <mat-checkbox *ngIf="item.text.includes('eligibility')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
       <a routerLink="../eligibility">{{item.text}}</a>
     </mat-checkbox>
-    <mat-checkbox *ngIf="!item.text.includes('contraindications') && !item.text.includes('eligibility')">
+    <mat-checkbox *ngIf="!item.text.includes('contraindications') && !item.text.includes('eligibility')" [checked]="item.isChecked" (click)="toggleIsChecked(item.key)">
       {{item.text}}
     </mat-checkbox>
   </div>

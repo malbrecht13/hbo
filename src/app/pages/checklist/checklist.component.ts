@@ -23,7 +23,6 @@ export class ChecklistComponent implements OnInit {
       const checked = this.checkboxValues[item.key];
       item.isChecked = checked === 'true';
     });
-    console.log(this.checklistItems);
   }
 
   toggleIsChecked(key: string): void {
