@@ -1,4 +1,10 @@
 .eligibility_page {
-  margin: 150px;
+  margin-bottom: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  .eligibility_page {
+    margin: 150px;
+  }
 }
 
