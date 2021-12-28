@@ -10,6 +10,27 @@
   z-index: 3;
 }
 
+h1 {
+  cursor: pointer;
+}
+
 mat-icon {
   font-size: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .app_header {
+    padding: 30px;
+  }
+
+  mat-icon {
+    padding-right: 50px;
+    font-size: 3rem;
+  }
+
 }

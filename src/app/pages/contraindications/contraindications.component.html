@@ -3,18 +3,25 @@
   <h1 class="ci_heading">Hyperbaric Oxygen Contraindications</h1>
 
   <h2 class="ci_subheading">Absolute contraindications</h2>
-  <ul class="ci_list" *ngFor="let ci of contraindications.absolute">
-    <li class="ci_list_item">{{ci}}</li>
-  </ul>
+  <div class="protective_div">
+    <ul class="ci_list" *ngFor="let ci of contraindications.absolute">
+      <li class="ci_list_item">{{ci}}</li>
+    </ul>
+  </div>
 
   <h2 class="ci_subheading">Relative contraindications</h2>
-  <ul class="ci_list" *ngFor="let ci of contraindications.relative">
-    <li class="ci_list_item">{{ci}}</li>
-  </ul>
+  <div class="protective_div">
+    <ul class="ci_list" *ngFor="let ci of contraindications.relative">
+      <li class="ci_list_item">{{ci}}</li>
+    </ul>
+  </div>
+  
 
   <h2 class="ci_subheading">Other important history</h2>
-  <ul class="ci_list" *ngFor="let ci of contraindications.other">
-    <li class="ci_list_item">{{ci}}</li>
-  </ul>
+  <div class="protective_div">
+    <ul class="ci_list" *ngFor="let ci of contraindications.other">
+      <li class="ci_list_item">{{ci}}</li>
+    </ul>
+  </div>
 
 </section>

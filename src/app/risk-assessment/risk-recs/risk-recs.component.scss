@@ -10,3 +10,21 @@
   background-color: #673ab6 !important;
   color: #fff;
 }
+
+@media only screen and (min-width: 768px) {
+  .page {
+    margin: 150px 25vw;
+    max-width: 1200px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3, li{
+    font-size: 1.3rem;
+  }
+
+  ul {
+    margin-bottom: 30px;
+  }
+}

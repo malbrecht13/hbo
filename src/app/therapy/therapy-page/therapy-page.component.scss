@@ -32,3 +32,21 @@ mat-list-item {
 .ata_container {
   margin-bottom: 30px;
 }
+
+li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .condition_list {
+    margin: 150px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+}

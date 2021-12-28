@@ -19,10 +19,30 @@
 
 .next_btn_div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .next_btn {
   background-color: #673ab6 !important;
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .risk_assessment_page {
+    margin: 150px 25vw;
+    max-width: 1200px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  mat-checkbox {
+    font-size: 1.3rem;
+  }
+
+  .risk_condition_container {
+    margin-bottom: 10px;
+  }
 }

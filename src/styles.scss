@@ -35,3 +35,13 @@ body {
   text-align: center;
 }
 
+a, .nav_item {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+ body {
+   margin: 0;
+ }
+}
+
